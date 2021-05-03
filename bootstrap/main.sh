@@ -1,6 +1,4 @@
-#!/bin/bash
-# Do nothing for now
-return 
+#!/bin/bash 
 
 # Login to ghcr.io and pull the latest epg-grabber
 # echo $PAT | docker login ghcr.io -u $GHCR_USER --password-stdin
