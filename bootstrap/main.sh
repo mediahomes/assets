@@ -36,6 +36,7 @@ send_logs () {
 	sudo find . -name \*.log -exec cp {} $LOGDIR \;
 
 	cd $LOGDIR
+	sudo chown -R ec2-user:ec2-user .
 	git add . && git commit -am "New logs"
 	git push
 }
