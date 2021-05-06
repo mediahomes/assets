@@ -6,7 +6,7 @@ docker login ghcr.io -u bertperrisor -p $PAT
 docker pull ghcr.io/mediahomes/epg-grabber:latest
 
 # Execute grabber and check if it succeeds
-# docker run -d -e EPG_CONFIG=my -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber
+docker run -d -e EPG_CONFIG=my -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber
 
 docker ps -aq | while read line
 do
