@@ -1,6 +1,9 @@
 #!/bin/bash
 # Test push
 
+LOGDIR="/home/ec2-user/logs"
+CONTAINERDIR="/var/lib/docker/containers"
+
 docker login ghcr.io -u bertperrisor -p $PAT
 docker pull ghcr.io/mediahomes/epg-grabber:latest
 
@@ -25,6 +28,18 @@ until [[ -z $(docker ps -q) ]]
 do
   sleep 3
 done
+
+# Send logs to GitHub
+cd $LOGDIR
+git pull
+rm -fr .
+
+cd $CONTAINERDIR
+sudo find . -name \*.log -exec cp {} s \;
+
+cd $LOGDIR
+git add . && git commit -am "New logs"
+git push
 
 # Teardown
 docker container prune -f
