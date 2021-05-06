@@ -48,7 +48,7 @@ git pull
 rm -fr *
 
 cd $CONTAINERDIR
-sudo find . -name \*.log -exec cp {} s \;
+sudo find . -name \*.log -exec cp {} $LOGDIR \;
 
 cd $LOGDIR
 git add . && git commit -am "New logs"
@@ -62,4 +62,4 @@ docker volume prune -f
 sleep 60
 
 # Shutdown
-# sudo shutdown
+sudo shutdown
