@@ -1,7 +1,6 @@
 #!/bin/bash
+# Test push
 
-# Login to ghcr.io and pull the latest epg-grabber
-# echo $PAT | docker login ghcr.io -u $GHCR_USER --password-stdin
 docker login ghcr.io -u bertperrisor -p $PAT
 docker pull ghcr.io/mediahomes/epg-grabber:latest
 
