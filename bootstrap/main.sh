@@ -45,7 +45,7 @@ done
 # Send logs to GitHub
 cd $LOGDIR
 git pull
-rm -fr .
+rm -fr *
 
 cd $CONTAINERDIR
 sudo find . -name \*.log -exec cp {} s \;
