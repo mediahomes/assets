@@ -1,6 +1,8 @@
 #!/bin/bash
 # Test push
 
+exit
+
 LOGDIR="/home/ec2-user/logs"
 CONTAINERDIR="/var/lib/docker/containers"
 
