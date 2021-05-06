@@ -42,14 +42,12 @@ docker login ghcr.io -u bertperrisor -p $PAT
 docker pull ghcr.io/mediahomes/epg-grabber:latest
 
 # Execute grabber and check if it succeeds
-docker run -d -e EPG_CONFIG=my -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber
+docker run -d -e EPG_CONFIG=my -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber && check_container
 
-check_container
 wait_container
 
-docker run -d -e EPG_CONFIG=premium -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber
+docker run -d -e EPG_CONFIG=premium -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber && check_container
 
-check_container
 wait_container
 
 send_logs
