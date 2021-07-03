@@ -48,11 +48,11 @@ docker pull ghcr.io/mediahomes/epg-grabber:latest
 
 docker run -d -e EPG_CONFIG=premium -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber && check_container
 
-# wait_container
+wait_container
 
-# docker run -d -e EPG_CONFIG=my -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber && check_container
+docker run -d -e EPG_CONFIG=my -e EPG_DAYS=7 ghcr.io/mediahomes/epg-grabber && check_container
 
-# wait_container
+wait_container
 
 send_logs
 
