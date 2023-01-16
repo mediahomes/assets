@@ -2,8 +2,6 @@ name: JOB - Generate EPG - Every 1 day
 
 on:
   workflow_dispatch:
-    branches:
-      - gh-pages
   
 jobs:
   run_grabber:
@@ -15,6 +13,9 @@ jobs:
           - python-version: "3.9"
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          
       - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
