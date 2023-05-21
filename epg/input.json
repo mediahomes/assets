@@ -113,6 +113,14 @@
             "channels": [
                 "cinemaworld"
             ]
+        },
+        {
+            "site": "mana2_my",
+            "channels": [
+                "196291657",
+                "237736930"
+            ]
+            
         }
     ]
 }
