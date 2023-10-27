@@ -1,1 +1,3 @@
-{"errorMessage":"Function timed out after 3 seconds (maxMemoryUsage: 0MB)"}
+#EXTM3U
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=4170000,BANDWIDTH=5220000,RESOLUTION=1280x720,FRAME-RATE=25.000,CODECS="avc1.64001f,mp4a.40.2",CLOSED-CAPTIONS=NONE
+https://live.mana2.my/MotorracingTv/tracks-v1a1/mono.m3u8?token=1698435021-878f79c647f14c4fae886c5cc6ea1530-0-eb1d23dbf6da6f6fbef32e5c58903661&auth_key=1698435021-878f79c647f14c4fae886c5cc6ea1530-0-e39ae74fb02ac3eb92287a182ce11cb9
