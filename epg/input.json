@@ -1,6 +1,11 @@
 {
     "configs": [
         {
+            "site": "astro_com_my",
+            "channels": [
+                "395"
+        },
+        {
             "site": "sooka_my",
             "channels": [
                 "2611"
