@@ -5,9 +5,7 @@
       "ghcr.io/devcontainers/features/node:1": {},
       "ghcr.io/devcontainers/features/python:1": {}
     },
-    "onCreateCommand": {
-      "install-epg-grabber": "pip install git+https://github.com/akmalharith/epg-grabber.git"
-    },
+    "postCreateCommand": "pip install git+https://github.com/akmalharith/epg-grabber.git",
     "customizations": {
       "vscode": {
         "settings": {
